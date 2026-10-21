@@ -1,24 +1,46 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+  <!-- ==========================================================================
+       BLOCO 1: METADADOS E CONFIGURAÇÕES DO NAVEGADOR
+       Função: Configura o conjunto de caracteres, responsividade e SEO básico.
+       ========================================================================== -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a0d12">
   <meta name="description" content="ALFA-ER Engenharia & Tecnologia. Automação industrial, sistemas supervisórios, projetos elétricos, integração, software e soluções industriais.">
+  
   <title>ALFA-ER | Engenharia & Tecnologia</title>
+
+  <!-- ==========================================================================
+       BLOCO 2: LINKS EXTERNOS E FONTES (Google Fonts & CSS)
+       Função: Carrega as famílias de fontes Inter e Rajdhani, e vincula o arquivo styles.css.
+       ========================================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Malha/linhas de fundo tecnológicas gerenciadas via CSS -->
   <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       BLOCO 3: CABEÇALHO DO SITE (Header / Logotipo e Menu)
+       Função: Exibe a identidade da marca e os links de ancoragem para navegação.
+       ========================================================================== -->
   <header class="site-header">
+    <!-- Logotipo e Nome da Empresa -->
     <a class="brand" href="#inicio" aria-label="ALFA-ER início">
       <span class="brand-mark">AE<span class="brand-mark-line"></span></span>
       <span class="brand-text"><strong>ALFA-ER</strong><small>ENGENHARIA <i>&</i> TECNOLOGIA</small></span>
     </a>
+    
+    <!-- Botão de controle do Menu Hamburguer para dispositivos móveis -->
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    
+    <!-- Links de Navegação Principal -->
     <nav class="nav">
       <a href="#solucoes">Soluções</a>
       <a href="#empresa">A empresa</a>
@@ -27,59 +49,136 @@
     </nav>
   </header>
 
+  <!-- ==========================================================================
+       CONTEÚDO PRINCIPAL (Main)
+       ========================================================================== -->
   <main>
+
+    <!-- ==========================================================================
+         BLOCO 4: SEÇÃO INDUSTRIAL DE BOAS-VINDAS (Hero Banner)
+         Função: Primeira dobra do site com slogans, chamadas de ação e o Core gráfico.
+         ========================================================================== -->
     <section class="hero section" id="inicio">
+      <!-- Lado Esquerdo: Mensagem de Texto e Botões -->
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot"></span> ENGENHARIA APLICADA À INDÚSTRIA</div>
         <h1>Tecnologia que<br><span>move a indústria.</span></h1>
         <p class="hero-lead">Automação, integração e soluções inteligentes para tornar processos industriais mais eficientes, confiáveis e conectados.</p>
+        
         <div class="hero-actions">
           <a class="button button-primary" href="#solucoes">Explore nossas soluções <span>↘</span></a>
           <a class="button button-ghost" href="#contato">Solicite um orçamento</a>
         </div>
         <div class="hero-footnote"><span class="mini-line"></span> PRECISÃO · CONFIABILIDADE · INOVAÇÃO</div>
       </div>
+      
+      <!-- Lado Direito: Elementos Visuais e Gráficos de Tecnologia -->
       <div class="hero-visual" aria-label="Identidade visual ALFA-ER">
         <div class="orb orb-one"></div><div class="orb orb-two"></div>
         <div class="tech-ring ring-one"></div><div class="tech-ring ring-two"></div>
+        
+        <!-- Emblema Centralizado (Core) -->
         <div class="hero-core">
           <div class="core-top">AE</div>
           <div class="core-line"></div>
           <div class="core-bottom">ALFA-ER</div>
           <div class="core-caption">ENGINEERING / TECHNOLOGY</div>
         </div>
+        
+        <!-- Tags Flutuantes com Informações Extras -->
         <div class="floating-tag tag-top"><span class="tag-icon">⌁</span><span><b>SISTEMAS INTEGRADOS</b><small>Conectividade industrial</small></span></div>
         <div class="floating-tag tag-bottom"><span class="tag-pulse"></span><span><b>INTELIGÊNCIA EM PROCESSOS</b><small>Da operação à informação</small></span></div>
+        
+        <!-- Coordenadas Geométricas de Detalhe -->
         <div class="coordinate coord-one">23° / 45° / AE</div>
         <div class="coordinate coord-two">INDUSTRIAL SYSTEMS</div>
       </div>
+      
+      <!-- Linhas decorativas no rodapé do banner principal -->
       <div class="hero-bottom-rule"><span></span><span></span><span></span><span></span><span></span></div>
     </section>
 
+    <!-- ==========================================================================
+         BLOCO 5: FAIXA DE MARCA (Intro Strip)
+         Função: Divisória horizontal simples de transição visual.
+         ========================================================================== -->
     <section class="intro-strip">
       <p>ENGENHARIA & TECNOLOGIA</p>
       <div class="strip-divider"></div>
-      <p class="strip-muted">SOLUÇÕES PARA DESAFIOS REAIS</p>
+      <p class="strip-muted">SOLUÇÕES PARA DESAFIOS REALES</p>
       <div class="strip-symbol">✳</div>
     </section>
 
+    <!-- ==========================================================================
+         BLOCO 6: GRADE DE SOLUÇÕES COMERCIAIS (Solutions Section)
+         Função: Lista os 6 principais pilares de atuação técnica e serviços.
+         ========================================================================== -->
     <section class="section solutions" id="solucoes">
       <div class="section-heading">
         <div><div class="eyebrow">O QUE FAZEMOS <span class="eyebrow-line"></span></div><h2>Soluções para<br><span>ir além do padrão.</span></h2></div>
         <p>Unimos conhecimento técnico e tecnologia para apoiar a operação, a modernização e a evolução de sistemas industriais.</p>
       </div>
+      
+      <!-- Grade de serviços distribuídos -->
       <div class="service-grid">
-        <article class="service-card"><div class="card-top"><span class="service-number">01</span><span class="service-icon">⌘</span></div><h3>Automação industrial</h3><p>Programação e integração de CLPs, controle de máquinas e melhoria de processos de automação.</p><a href="#contato" aria-label="Consultar automação industrial">Consultar solução <span>↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-number">02</span><span class="service-icon">▤</span></div><h3>SCADA & IHMs</h3><p>Interfaces de operação, supervisão de processos, visualização de dados e alarmes industriais.</p><a href="#contato" aria-label="Consultar SCADA e IHMs">Consultar solução <span>↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-number">03</span><span class="service-icon">⌁</span></div><h3>Elétrica & redes</h3><p>Integração de dispositivos, comunicação industrial e apoio a projetos elétricos e de controle.</p><a href="#contato" aria-label="Consultar elétrica e redes">Consultar solução <span>↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-number">04</span><span class="service-icon">⟐</span></div><h3>Software & monitoramento</h3><p>Sistemas de coleta, visualização e integração de informações para apoiar decisões operacionais.</p><a href="#contato" aria-label="Consultar software e monitoramento">Consultar solução <span>↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-number">05</span><span class="service-icon">⚙</span></div><h3>Manutenção industrial</h3><p>Apoio técnico para diagnóstico, melhoria e confiabilidade de sistemas e equipamentos industriais.</p><a href="#contato" aria-label="Consultar manutenção industrial">Consultar solução <span>↗</span></a></article>
-        <article class="service-card service-card-featured"><div class="card-top"><span class="service-number">06</span><span class="service-icon">↗</span></div><h3>Soluções sob medida</h3><p>Projetos personalizados de engenharia e tecnologia, desenvolvidos conforme a necessidade de cada operação.</p><a href="#contato" aria-label="Solicitar solução sob medida">Vamos conversar <span>↗</span></a></article>
+        <!-- Serviço 1 -->
+        <article class="service-card">
+          <div class="card-top"><span class="service-number">01</span><span class="service-icon">⌘</span></div>
+          <h3>Automação industrial</h3>
+          <p>Programação e integração de CLPs, controle de máquinas e melhoria de processos de automação.</p>
+          <a href="#contato" aria-label="Consultar automação industrial">Consultar solução <span>↗</span></a>
+        </article>
+        
+        <!-- Serviço 2 -->
+        <article class="service-card">
+          <div class="card-top"><span class="service-number">02</span><span class="service-icon">▤</span></div>
+          <h3>SCADA & IHMs</h3>
+          <p>Interfaces de operação, supervisão de processos, visualização de dados e alarmes industriais.</p>
+          <a href="#contato" aria-label="Consultar SCADA e IHMs">Consultar solução <span>↗</span></a>
+        </article>
+        
+        <!-- Serviço 3 -->
+        <article class="service-card">
+          <div class="card-top"><span class="service-number">03</span><span class="service-icon">⌁</span></div>
+          <h3>Elétrica & redes</h3>
+          <p>Integração de dispositivos, communication industrial e apoio a projetos elétricos e de controle.</p>
+          <a href="#contato" aria-label="Consultar elétrica e redes">Consultar solução <span>↗</span></a>
+        </article>
+        
+        <!-- Serviço 4 -->
+        <article class="service-card">
+          <div class="card-top"><span class="service-number">04</span><span class="service-icon">⟐</span></div>
+          <h3>Software & monitoramento</h3>
+          <p>Sistemas de coleta, visualização e integração de informações para apoiar decisões operacionais.</p>
+          <a href="#contato" aria-label="Consultar software e monitoramento">Consultar solução <span>↗</span></a>
+        </article>
+        
+        <!-- Serviço 5 -->
+        <article class="service-card">
+          <div class="card-top"><span class="service-number">05</span><span class="service-icon">⚙</span></div>
+          <h3>Manutenção industrial</h3>
+          <p>Apoio técnico para diagnóstico, melhoria e confiabilidade de sistemas e equipamentos industriais.</p>
+          <a href="#contato" aria-label="Consultar manutenção industrial">Consultar solução <span>↗</span></a>
+        </article>
+        
+        <!-- Serviço 6: Card de Destaque Especial -->
+        <article class="service-card service-card-featured">
+          <div class="card-top"><span class="service-number">06</span><span class="service-icon">↗</span></div>
+          <h3>Soluções sob medida</h3>
+          <p>Projetos personalizados de engenharia e tecnologia, desenvolvidos conforme a necessidade de cada operação.</p>
+          <a href="#contato" aria-label="Solicitar solução sob medida">Vamos conversar <span>↗</span></a>
+        </article>
       </div>
+      
       <p class="disclaimer">Os serviços apresentados são uma estrutura inicial do site e devem ser ajustados para refletir exatamente o escopo comercial da ALFA-ER.</p>
     </section>
 
+        <!-- ==========================================================================
+         BLOCO 7: INSTITUCIONAL / QUEM SOMOS (Company Section)
+         Função: Bloco de conteúdo sobre a história, visão e valores da empresa.
+         ========================================================================== -->
     <section class="company section" id="empresa">
+      <!-- Elemento visual técnico simulando um Blueprint/Desenho Técnico -->
       <div class="company-visual">
         <div class="blue-panel"></div>
         <div class="blueprint">
@@ -91,6 +190,8 @@
         </div>
         <div class="visual-index">FIG. 01 <span>—</span> ALFA-ER</div>
       </div>
+      
+      <!-- Cópia de texto institucional -->
       <div class="company-copy">
         <div class="eyebrow">SOBRE A ALFA-ER <span class="eyebrow-line"></span></div>
         <h2>Engenharia com visão.<br><span>Tecnologia com propósito.</span></h2>
@@ -100,49 +201,110 @@
       </div>
     </section>
 
+    <!-- ==========================================================================
+         BLOCO 8: VALORES E DIFERENCIAIS (Values Section)
+         Função: Destaca os pilares que diferenciam a ALFA-ER no mercado.
+         ========================================================================== -->
     <section class="values section" id="diferenciais">
       <div class="section-heading compact">
-        <div><div class="eyebrow">NOSSO COMPROMISSO <span class="eyebrow-line"></span></div><h2>Feito para funcionar.<br><span>Projetado para evoluir.</span></h2></div>
+        <div>
+          <div class="eyebrow">NOSSO COMPROMISSO <span class="eyebrow-line"></span></div>
+          <h2>Feito para funcionar.<br><span>Projetado para evoluir.</span></h2>
+        </div>
       </div>
+      
+      <!-- Grade contendo os blocos de diferenciais -->
       <div class="value-grid">
-        <article><span class="value-index">01 /</span><h3>Precisão técnica</h3><p>Decisões fundamentadas e atenção aos detalhes de cada aplicação.</p></article>
-        <article><span class="value-index">02 /</span><h3>Integração</h3><p>Sistemas e equipamentos trabalhando de forma coordenada.</p></article>
-        <article><span class="value-index">03 /</span><h3>Visão de futuro</h3><p>Tecnologia pensada para acompanhar a evolução da operação.</p></article>
-        <article><span class="value-index">04 /</span><h3>Parceria</h3><p>Comunicação transparente e soluções alinhadas ao desafio do cliente.</p></article>
+        <!-- Diferencial 01 -->
+        <article class="value-item">
+          <span class="value-index">01 /</span>
+          <h3>Precisão técnica</h3>
+          <p>Decisões fundamentadas e atenção rigorosa aos detalhes e normas de cada aplicação.</p>
+        </article>
+        
+        <!-- Diferencial 02 -->
+        <article class="value-item">
+          <span class="value-index">02 /</span>
+          <h3>Inovação prática</h3>
+          <p>Uso inteligente de ferramentas e metodologias modernas aplicadas à realidade operacional.</p>
+        </article>
+
+        <!-- Diferencial 03 -->
+        <article class="value-item">
+          <span class="value-index">03 /</span>
+          <h3>Foco em confiabilidade</h3>
+          <p>Sistemas robustos construídos para garantir a continuidade e a segurança dos processos.</p>
+        </article>
       </div>
     </section>
 
+    <!-- ==========================================================================
+         BLOCO 9: CANAL DE ATENDIMENTO E ORÇAMENTOS (Contact Section)
+         Função: Formulário de captação de leads e exibição de dados de contato.
+         ========================================================================== -->
     <section class="contact section" id="contato">
-      <div class="contact-panel">
-        <div class="contact-copy">
-          <div class="eyebrow"><span class="status-dot"></span> VAMOS CONSTRUIR ALGO MELHOR</div>
-          <h2>Qual é o seu<br><span>próximo desafio?</span></h2>
-          <p>Conte um pouco sobre sua necessidade. Vamos conversar sobre uma solução para sua operação.</p>
-          <div class="contact-details"><span class="contact-symbol">↗</span><span><b>ALFA-ER</b><small>Engenharia & Tecnologia</small></span></div>
-          <div class="contact-direct">
-            <a href="mailto:contato@alfaer.app"><span class="direct-icon">✉</span><span><small>E-MAIL</small><b>contato@alfaer.app</b></span></a>
-            <a href="https://wa.me/5517996016377" target="_blank" rel="noopener noreferrer"><span class="direct-icon">↗</span><span><small>WHATSAPP</small><b>(17) 99601-6377</b></span></a>
-          </div>
+      <div class="contact-container">
+        <!-- Textos e dados diretos de contato (Lado Esquerdo) -->
+        <div class="contact-info">
+          <div class="eyebrow">CONEXÃO DIRETA <span class="eyebrow-line"></span></div>
+          <h2>Vamos iniciar<br><span>um projeto?</span></h2>
+          <p>Entre em contato para discutir as demandas de engenharia, automação ou melhoria de processos da sua empresa.</p>
+          
+          <ul class="contact-list">
+            <li><strong>Email:</strong> contato@alfaer.com.br</li>
+            <li><strong>Atendimento:</strong> Segunda a Sexta — 8h às 18h</li>
+          </ul>
         </div>
-        <form id="contact-form" class="contact-form">
-          <label for="name">Nome</label><input id="name" name="name" autocomplete="name" placeholder="Como podemos chamar você?" required>
-          <label for="company-name">Empresa <span>(opcional)</span></label><input id="company-name" name="company" autocomplete="organization" placeholder="Nome da sua empresa">
-          <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br" required>
-          <label for="service">Assunto</label><select id="service" name="service" required><option value="">Selecione uma solução</option><option>Automação industrial</option><option>SCADA & IHMs</option><option>Elétrica & redes industriais</option><option>Software & monitoramento</option><option>Manutenção industrial</option><option>Solução sob medida</option><option>Outro assunto</option></select>
-          <label for="message">Como podemos ajudar?</label><textarea id="message" name="message" rows="4" placeholder="Descreva brevemente sua necessidade..." required></textarea>
-          <button class="button button-primary submit-button" type="submit">Preparar mensagem <span>↗</span></button>
-          <p class="form-note">O formulário abrirá seu aplicativo de e-mail para você revisar e enviar a mensagem.</p>
+
+        <!-- Formulário interativo de contato (Lado Direito) -->
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail corporativo</label>
+            <input type="email" id="email" name="email" placeholder="Ex: joao@empresa.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Como podemos ajudar?</label>
+            <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente a sua necessidade técnica ou projeto..." required></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">Enviar mensagem <span>↗</span></button>
         </form>
       </div>
     </section>
+
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/5517996016377?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20ALFA-ER%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Fale com a ALFA-ER pelo WhatsApp"><span class="whatsapp-glyph">◉</span><span>Fale pelo WhatsApp</span><b>↗</b></a>
+  <!-- ==========================================================================
+       BLOCO 10: RODAPÉ INSTITUCIONAL (Footer)
+       Função: Direitos autorais, links rápidos de navegação e notas legais.
+       ========================================================================== -->
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">AE<span class="brand-mark-line"></span></span><span class="brand-text"><strong>ALFA-ER</strong><small>ENGENHARIA <i>&</i> TECNOLOGIA</small></span></a>
-    <p>Engenharia, automação e tecnologia para a indústria.</p>
-    <div class="footer-bottom"><span>© <span id="year"></span> ALFA-ER. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+    <div class="footer-content section">
+      <div class="footer-brand">
+        <span class="brand-text"><strong>ALFA-ER</strong><small>ENGENHARIA & TECNOLOGIA</small></span>
+        <p>© 2026 ALFA-ER Serviços e Soluções. Todos os direitos reservados.</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#empresa">A Empresa</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </div>
   </footer>
-  <script src="script.js"></script>
+
+  <!-- ==========================================================================
+       BLOCO 11: ARQUIVOS DE COMPORTAMENTO (Scripts)
+       Função: Carrega o arquivo JavaScript responsável pelas interatividades do site.
+       ========================================================================== -->
+  <script src="scripts.js"></script>
+
 </body>
 </html>
