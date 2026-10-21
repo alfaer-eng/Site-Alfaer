@@ -68,14 +68,14 @@ button,input,textarea,select {
 
 /* ... (mantenha a regra .site-header e .brand como já estão) ... */
 /* No Bloco 4 do seu styles.css, garanta que a classe está assim: */
-.site-header {
+/*.site-header {
   height: 88px;
   max-width: var(--max);
   margin: auto;
   padding: 0 24px;
   display: flex;
-  align-items: center;         /* Isso centraliza tudo na mesma linha horizontal */
-  justify-content: space-between;
+  align-items: center;         /* Isso centraliza tudo na mesma linha horizontal */   
+/*justify-content: space-between;
   border-bottom: 1px solid rgba(128,160,188,.15);
   position: relative;
   z-index: 10;
