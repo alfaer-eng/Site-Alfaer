@@ -62,44 +62,51 @@ button,input,textarea,select {
 }
 
 /* ==========================================================================
-   BLOCO 4: CABEÇALHO DO SITE (Site Header & Logotipo) - AJUSTADO
+   BLOCO 4: CABEÇALHO DO SITE (Site Header & Logotipo) - ALINHADO LADO A LADO
    Função: Posicionamento do logo, nome da marca e links de navegação superiores.
    ========================================================================== */
 
-/* ... (mantenha a regra .site-header e .brand como já estão) ... */
-/* No Bloco 4 do seu styles.css, garanta que a classe está assim: */
 .site-header {
   height: 88px;
   max-width: var(--max);
   margin: auto;
   padding: 0 24px;
   display: flex;
-  align-items: center;         /* Isso centraliza tudo na mesma linha horizontal */   
+  align-items: center;         /* Centraliza o logo e os links na mesma linha horizontal */
   justify-content: space-between;
   border-bottom: 1px solid rgba(128,160,188,.15);
   position: relative;
   z-index: 10;
 }
 
-/* Símbolo do logotipo estilizado (AUMENTADO de 42px para 50px) */
+/* Garante o alinhamento em linha do octógono com o texto */
+.brand {
+  display: flex;
+  align-items: center;         /* Alinha horizontalmente o logo "AE" e as escritas */
+  gap: 16px;                   /* Ajustado para um espaçamento mais confortável */
+  text-decoration: none;
+}
+
+/* Símbolo do logotipo estilizado (Mantido o tamanho ideal) */
 .brand-mark {
-  width: 50px;         /* Aumentado */
-  height: 50px;        /* Aumentado */
+  width: 50px;
+  height: 50px;
   border: 1px solid #287fc1;
   display: grid;
   place-items: center;
-  font: 700 24px Rajdhani, sans-serif; /* Fonte interna aumentada de 20px para 24px */
+  font: 700 24px Rajdhani, sans-serif;
   color: #dceaf6;
   position: relative;
   clip-path: polygon(0 0, 78% 0, 100% 22%, 100% 100%, 22% 100%, 0 78%);
   background: linear-gradient(135deg, #172b40, #080c12);
+  flex-shrink: 0;             /* Previne que o octógono amasse em telas compactas */
 }
 
 .brand-mark:before {
   content: "";
   position: absolute;
   width: 2px;
-  height: 38px;        /* Ajustado de 32px para 38px para acompanhar o novo tamanho */
+  height: 38px;
   background: var(--cyan);
   transform: rotate(38deg);
   opacity: .8;
@@ -115,32 +122,32 @@ button,input,textarea,select {
   border-right: 2px solid var(--cyan);
 }
 
-/* Estilo do texto ao lado do logotipo */
+/* Bloco de texto da marca */
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.05;           /* Ajustado para aproximar o título do subtítulo */
 }
 
-/* Nome ALFA-ER (AUMENTADO de 25px para 29px) */
+/* Nome ALFA-ER */
 .brand-text strong {
-  font: 700 29px Rajdhani, sans-serif; /* Aumentado */
+  font: 700 29px Rajdhani, sans-serif;
   letter-spacing: 2px;
+  color: var(--text);
 }
 
-/* Subtítulo (AUMENTADO de 9px para 10px para manter a proporção) */
+/* Subtítulo */
 .brand-text small {
-  font-size: 10px;     /* Aumentado */
+  font-size: 10px;
   letter-spacing: 1.65px;
   color: #aab7c4;
-  margin-top: 5px;
+  margin-top: 2px;            /* Reduzido para ficar mais próximo ao nome principal */
 }
 
 .brand-text i {
   color: var(--cyan);
   font-style: normal;
 }
-
 
 /* ============================================================
    BLOCO 05 — MENU DE NAVEGAÇÃO
