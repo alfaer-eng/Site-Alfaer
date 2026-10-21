@@ -1,0 +1,28 @@
+ALFA-ER — Engenharia & Tecnologia
+==================================
+
+Conteúdo
+- index.html: página institucional
+- styles.css: layout responsivo e identidade visual
+- script.js: menu mobile e formulário de contato
+- assets/: arquivos de imagem, se incluídos
+
+COMO PUBLICAR NO CLOUDFLARE PAGES
+1. Extraia o ZIP para uma pasta no computador.
+2. Acesse https://dash.cloudflare.com/ e entre na sua conta.
+3. Abra Workers & Pages (ou Compute > Workers & Pages, conforme a interface).
+4. Crie uma aplicação Pages e escolha a opção de fazer upload dos arquivos estáticos (Direct Upload).
+5. Envie a pasta do site extraída, ou um ZIP se a tela aceitar ZIP.
+6. Após publicar, teste o endereço temporário *.pages.dev.
+7. Em Custom domains, adicione alfaer.app e siga as instruções exibidas pela Cloudflare.
+8. Se quiser usar também www.alfaer.app, adicione-o como domínio personalizado separado.
+
+IMPORTANTE ANTES DE PUBLICAR
+- O formulário está configurado para abrir o programa de e-mail do visitante usando contato@alfaer.app.
+- WhatsApp comercial configurado: +55 17 99601-6377, com botão flutuante e link na seção de contato.
+- O número de WhatsApp não foi informado; por isso não incluí um botão com número inventado.
+- Revise os serviços descritos para confirmar que todos são oferecidos pela ALFA-ER.
+- Se o domínio já tiver registros DNS usados por e-mail ou outros serviços, não os apague. Siga somente as instruções de domínio personalizado mostradas pela Cloudflare.
+- Esta é uma versão inicial estática. O formulário não armazena mensagens no servidor; ele prepara um e-mail no dispositivo do visitante.
+
+O site não depende de framework ou build: basta publicar os arquivos estáticos.
