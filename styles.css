@@ -61,84 +61,73 @@ button,input,textarea,select {
     mask-image:linear-gradient(to bottom,black,transparent 80%);
 }
 
-/* ============================================================
-   BLOCO 04 — CABEÇALHO E IDENTIDADE DA MARCA
-   Função: controlar a aparência desta parte do site.
-   ============================================================ */
-.site-header {
-    height:88px;
-    max-width:var(--max);
-    margin:auto;
-    padding:0 24px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    border-bottom:1px solid rgba(128,160,188,.15);
-    position:relative;
-    z-index:10;
-}
+/* ==========================================================================
+   BLOCO 4: CABEÇALHO DO SITE (Site Header & Logotipo) - AJUSTADO
+   Função: Posicionamento do logo, nome da marca e links de navegação superiores.
+   ========================================================================== */
 
-.brand {
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
+/* ... (mantenha a regra .site-header e .brand como já estão) ... */
 
+/* Símbolo do logotipo estilizado (AUMENTADO de 42px para 50px) */
 .brand-mark {
-    width:42px;
-    height:42px;
-    border:1px solid #287fc1;
-    display:grid;
-    place-items:center;
-    font:700 20px Rajdhani,sans-serif;
-    color:#dceaf6;
-    position:relative;
-    clip-path:polygon(0 0,78% 0,100% 22%,100% 100%,22% 100%,0 78%);
-    background:linear-gradient(135deg,#172b40,#080c12);
+  width: 50px;         /* Aumentado */
+  height: 50px;        /* Aumentado */
+  border: 1px solid #287fc1;
+  display: grid;
+  place-items: center;
+  font: 700 24px Rajdhani, sans-serif; /* Fonte interna aumentada de 20px para 24px */
+  color: #dceaf6;
+  position: relative;
+  clip-path: polygon(0 0, 78% 0, 100% 22%, 100% 100%, 22% 100%, 0 78%);
+  background: linear-gradient(135deg, #172b40, #080c12);
 }
 
 .brand-mark:before {
-    content:"";
-    position:absolute;
-    width:2px;
-    height:32px;
-    background:var(--cyan);
-    transform:rotate(38deg);
-    opacity:.8;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 38px;        /* Ajustado de 32px para 38px para acompanhar o novo tamanho */
+  background: var(--cyan);
+  transform: rotate(38deg);
+  opacity: .8;
 }
 
 .brand-mark-line {
-    position:absolute;
-    right:4px;
-    top:5px;
-    width:8px;
-    height:8px;
-    border-top:2px solid var(--cyan);
-    border-right:2px solid var(--cyan);
+  position: absolute;
+  right: 4px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--cyan);
+  border-right: 2px solid var(--cyan);
 }
 
+/* Estilo do texto ao lado do logotipo */
 .brand-text {
-    display:flex;
-    flex-direction:column;
-    line-height:1.1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
+/* Nome ALFA-ER (AUMENTADO de 25px para 29px) */
 .brand-text strong {
-    font:700 25px Rajdhani,sans-serif;
-    letter-spacing:2px;
+  font: 700 29px Rajdhani, sans-serif; /* Aumentado */
+  letter-spacing: 2px;
 }
 
+/* Subtítulo (AUMENTADO de 9px para 10px para manter a proporção) */
 .brand-text small {
-    font-size:9px;
-    letter-spacing:1.65px;
-    color:#aab7c4;
-    margin-top:5px;
+  font-size: 10px;     /* Aumentado */
+  letter-spacing: 1.65px;
+  color: #aab7c4;
+  margin-top: 5px;
 }
 
 .brand-text i {
-    color:var(--cyan);
-    font-style:normal;
+  color: var(--cyan);
+  font-style: normal;
 }
+
 
 /* ============================================================
    BLOCO 05 — MENU DE NAVEGAÇÃO
