@@ -41,13 +41,13 @@
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     
     <!-- Links de Navegação Principal -->
-    <nav class="nav">
-      <a href="#solucoes">Soluções</a>
-      <a href="#projetos">Projetos</a> 
-      <a href="#empresa">A empresa</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#contato" class="nav-cta">Fale conosco <span>↗</span></a>
-    </nav>
+<nav class="nav">
+  <a href="#solucoes">Soluções</a>
+  <a href="#projetos">Projetos</a> <!-- ADICIONE ESTA LINHA -->
+  <a href="#empresa">A empresa</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#contato" class="nav-cta">Fale conosco <span>↗</span></a>
+</nav>
   </header>
 
   <!-- ==========================================================================
@@ -173,7 +173,48 @@
       
       <p class="disclaimer">Os serviços apresentados são uma estrutura inicial do site e devem ser ajustados para refletir exatamente o escopo comercial da ALFA-ER.</p>
     </section>
+    <!-- ==========================================================================
+         BLOCO 6.5: PORTFÓLIO DE PROJETOS INTEGRADOS (Projects Section)
+         Função: Ilustra os sistemas reais já entregues e integrados pela ALFA-ER.
+         ========================================================================== -->
+    <section class="section projects" id="projetos">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">CASES DE SUCESSO <span class="eyebrow-line"></span></div>
+          <h2>Sistemas em<br><span>operação real.</span></h2>
+        </div>
+        <p>Conheça algumas das nossas principais integrações de engenharia aplicadas diretamente no chão de fábrica.</p>
+      </div>
 
+      <!-- Grade dos Projetos -->
+      <div class="projects-grid">
+        
+        <!-- Projeto 1: SCADA -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="https://dreamstime.com" alt="Central de Monitoramento SCADA">
+            <span class="project-tag">SCADA & IHMs</span>
+          </div>
+          <div class="project-content">
+            <h3>Centralização de Monitoramento de Processos</h3>
+            <p>Desenvolvimento de sistema supervisório completo para controle em tempo real, gerenciamento de alarmes críticos e relatórios de performance para linhas produtivas complexas.</p>
+          </div>
+        </article>
+
+        <!-- Projeto 2: Painel PLC -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="https://electrical-engineering-portal.com" alt="Painel Elétrico de Controle PLC">
+            <span class="project-tag">Automação / Elétrica</span>
+          </div>
+          <div class="project-content">
+            <h3>Modernização de Painel de Controle e PLC</h3>
+            <p>Substituição de sistemas legados por lógicas de programação robustas em CLPs modernos, acompanhado do redesenho técnico do painel de distribuição e redes industriais.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>    
         <!-- ==========================================================================
          BLOCO 7: INSTITUCIONAL / QUEM SOMOS (Company Section)
          Função: Bloco de conteúdo sobre a história, visão e valores da empresa.
@@ -280,6 +321,89 @@
     </section>
 
   </main>
+/* ==========================================================================
+   BLOCO 9.5: SEÇÃO DE PROJETOS INTEGRADOS (PORTFÓLIO)
+   Função: Estilização de cards com imagens horizontais e tags em Ciano.
+   ========================================================================== */
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Divide em duas colunas de projetos */
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: linear-gradient(145deg, rgba(20,29,39,.68), rgba(10,14,20,.4));
+  border: 1px solid #283541;
+  overflow: hidden;
+  transition: border-color .3s, transform .3s;
+}
+
+.project-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+}
+
+.project-image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  border-bottom: 1px solid #283541;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  transition: transform .4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05); /* Efeito suave de zoom na foto ao passar o mouse */
+}
+
+.project-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(9, 16, 24, .85);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  font: 700 24px Rajdhani, sans-serif;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.project-content p {
+  font-size: 13px;
+  color: #92a0ad;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Ajuste simples de responsividade para telas de celulares */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
   <!-- ==========================================================================
        BLOCO 10: RODAPÉ INSTITUCIONAL (Footer)
