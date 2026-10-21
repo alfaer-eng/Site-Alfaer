@@ -823,4 +823,166 @@ button, input, textarea, select {
     transform: rotate(45deg);
     letter-spacing: 1px;
 }
+/* ============================================================
+   BLOCO 14 — SEÇÃO INSTITUCIONAL (Company & Blueprint)
+   Função: Organiza a seção sobre em duas colunas com um painel técnico.
+   ============================================================ */
+.company.section {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Painel Técnico (Simulação de Planta/Blueprint) */
+.company-visual {
+    background: #0e131b;
+    border: 1px solid #1f2d3d;
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.blueprint {
+    border: 1px dashed rgba(0, 217, 255, 0.2);
+    width: 80%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueprint-emblem {
+    font: 700 72px 'Rajdhani', sans-serif;
+    color: rgba(220, 231, 240, 0.05);
+    border: 1px solid rgba(0, 140, 255, 0.1);
+    padding: 10px 30px;
+}
+
+.blueprint-label, .blueprint-coords {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #4a6175;
+    margin-top: 15px;
+}
+
+.visual-index {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #557186;
+}
+
+/* Bloco de Texto (Lado Direito) */
+.company-copy {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-copy p {
+    color: #9ba8b6;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 20px 0;
+}
+
+.text-link {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--cyan, #00d9ff);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   BLOCO 15 — GRADE DE DIFERENCIAIS E VALORES (Value Grid)
+   Função: Transforma a lista de compromissos em blocos técnicos paralelos.
+   ============================================================ */
+.values.section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    border-top: 1px solid rgba(128, 160, 188, 0.1);
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+/* Cada Bloco de Diferencial */
+.value-grid article {
+    background: rgba(14, 19, 27, 0.5);
+    border-left: 2px solid #253342;
+    padding: 24px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.value-grid article:hover {
+    border-left-color: var(--cyan, #00d9ff);
+    background: rgba(14, 19, 27, 0.9);
+}
+
+.value-index {
+    font: 700 12px 'Rajdhani', sans-serif;
+    color: var(--cyan, #00d9ff);
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.value-grid h3 {
+    font: 700 20px 'Rajdhani', sans-serif;
+    color: #edf3f8;
+    margin: 0 0 8px 0;
+}
+
+.value-grid p {
+    font-size: 13px;
+    color: #7f91a1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   REGRAS DE RESPONSIVIDADE (MOBILE)
+   ============================================================ */
+@media (max-width: 992px) {
+    /* Desfaz as duas colunas do "Sobre" e empilha verticalmente */
+    .company.section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .company-visual {
+        height: 280px;
+    }
+
+    .values.section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
 
