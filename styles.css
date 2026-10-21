@@ -985,4 +985,244 @@ button, input, textarea, select {
         gap: 20px;
     }
 }
+/* ============================================================
+   BLOCO 16 — SEÇÃO DE CONTATO E FORMULÁRIO (Contact Section)
+   Função: Estrutura o painel de conversão e estiliza inputs industriais.
+   ============================================================ */
+.contact.section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    border-top: 1px solid rgba(128, 160, 188, 0.1);
+}
+
+/* Painel Geral: Divide textos na esquerda e formulário na direita */
+.contact-panel {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+}
+
+/* Bloco de Textos e Links de Contato Direto */
+.contact-copy {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.contact-details b {
+    color: #edf3f8;
+}
+
+.contact-details small {
+    display: block;
+    color: #6f8292;
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+/* Links Diretos (E-mail e WhatsApp) */
+.contact-direct {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.contact-direct a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #0e131b;
+    border: 1px solid #1f2d3d;
+    padding: 16px 20px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.contact-direct a:hover {
+    border-color: var(--cyan, #00d9ff);
+    background: #111824;
+}
+
+.direct-icon {
+    font-size: 18px;
+    color: var(--cyan, #00d9ff);
+}
+
+.contact-direct span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.contact-direct small {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #6f8292;
+}
+
+.contact-direct b {
+    font-size: 14px;
+    color: #edf3f8;
+    letter-spacing: 0.5px;
+}
+
+/* FORMULÁRIO E INPUTS ESTRUTURADOS */
+.contact-form {
+    background: #0e131b;
+    border: 1px solid #1f2d3d;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aab5c1;
+    margin-bottom: -10px; /* Aproxima o rótulo do seu respectivo input */
+}
+
+.contact-form label span {
+    color: #557186;
+    font-size: 10px;
+    text-transform: none;
+}
+
+/* Estilização dos campos de digitação e seleção */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    background: #090c11;
+    border: 1px solid #253342;
+    padding: 14px 16px;
+    color: #edf3f8;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--cyan, #00d9ff);
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.1);
+}
+
+/* Estilização do Placeholder interno */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #4a6175;
+    font-size: 13.5px;
+}
+
+/* Ajuste específico para a caixa de seleção */
+.contact-form select {
+    cursor: pointer;
+    appearance: none; /* Remove seta padrão feia do sistema */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300d9ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite esticar apenas para baixo */
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-note {
+    font-size: 11px;
+    color: #6f8292;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   BLOCO 17 — RODAPÉ DA PÁGINA (Footer Estilizado)
+   ============================================================ */
+.site-footer {
+    background: #06090d;
+    border-top: 1px solid rgba(128, 160, 188, 0.1);
+    padding: 60px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-brand {
+    transform: scale(0.9);
+}
+
+.site-footer > p {
+    font-size: 13px;
+    color: #6f8292;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: var(--max, 1180px);
+    border-top: 1px solid #141f2c;
+    padding-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #4a6175;
+}
+
+.footer-bottom a {
+    color: var(--cyan, #00d9ff);
+    transition: color 0.2s;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+/* ============================================================
+   REGRAS DE RESPONSIVIDADE (MOBILE)
+   ============================================================ */
+@media (max-width: 992px) {
+    .contact.section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact-panel {
+        grid-template-columns: 1fr; /* Empilha texto e form verticalmente */
+        gap: 48px;
+    }
+
+    .contact-form {
+        padding: 24px; /* Diminui o recuo interno em telas pequenas */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
 
