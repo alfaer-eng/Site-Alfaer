@@ -3,7 +3,6 @@
 <head>
   <!-- ==========================================================================
        BLOCO 1: METADADOS E CONFIGURAÇÕES DO NAVEGADOR
-       Função: Configura o conjunto de caracteres, responsividade e SEO básico.
        ========================================================================== -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +13,6 @@
 
   <!-- ==========================================================================
        BLOCO 2: LINKS EXTERNOS E FONTES (Google Fonts & CSS)
-       Função: Carrega as famílias de fontes Inter e Rajdhani, e vincula o arquivo styles.css.
        ========================================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,26 +26,22 @@
 
   <!-- ==========================================================================
        BLOCO 3: CABEÇALHO DO SITE (Header / Logotipo e Menu)
-       Função: Exibe a identidade da marca e os links de ancoragem para navegação.
        ========================================================================== -->
   <header class="site-header">
-    <!-- Logotipo e Nome da Empresa -->
     <a class="brand" href="#inicio" aria-label="ALFA-ER início">
       <span class="brand-mark">AE<span class="brand-mark-line"></span></span>
       <span class="brand-text"><strong>ALFA-ER</strong><small>ENGENHARIA <i>&</i> TECNOLOGIA</small></span>
     </a>
     
-    <!-- Botão de controle do Menu Hamburguer para dispositivos móveis -->
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     
-    <!-- Links de Navegação Principal -->
-<nav class="nav">
-  <a href="#solucoes">Soluções</a>
-  <a href="#projetos">Projetos</a> <!-- ADICIONE ESTA LINHA -->
-  <a href="#empresa">A empresa</a>
-  <a href="#diferenciais">Diferenciais</a>
-  <a href="#contato" class="nav-cta">Fale conosco <span>↗</span></a>
-</nav>
+    <nav class="nav">
+      <a href="#solucoes">Soluções</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#empresa">A empresa</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato" class="nav-cta">Fale conosco <span>↗</span></a>
+    </nav>
   </header>
 
   <!-- ==========================================================================
@@ -57,10 +51,8 @@
 
     <!-- ==========================================================================
          BLOCO 4: SEÇÃO INDUSTRIAL DE BOAS-VINDAS (Hero Banner)
-         Função: Primeira dobra do site com slogans, chamadas de ação e o Core gráfico.
          ========================================================================== -->
     <section class="hero section" id="inicio">
-      <!-- Lado Esquerdo: Mensagem de Texto e Botões -->
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot"></span> ENGENHARIA APLICADA À INDÚSTRIA</div>
         <h1>Tecnologia que<br><span>move a indústria.</span></h1>
@@ -73,12 +65,10 @@
         <div class="hero-footnote"><span class="mini-line"></span> PRECISÃO · CONFIABILIDADE · INOVAÇÃO</div>
       </div>
       
-      <!-- Lado Direito: Elementos Visuais e Gráficos de Tecnologia -->
       <div class="hero-visual" aria-label="Identidade visual ALFA-ER">
         <div class="orb orb-one"></div><div class="orb orb-two"></div>
         <div class="tech-ring ring-one"></div><div class="tech-ring ring-two"></div>
         
-        <!-- Emblema Centralizado (Core) -->
         <div class="hero-core">
           <div class="core-top">AE</div>
           <div class="core-line"></div>
@@ -86,22 +76,18 @@
           <div class="core-caption">ENGINEERING / TECHNOLOGY</div>
         </div>
         
-        <!-- Tags Flutuantes com Informações Extras -->
         <div class="floating-tag tag-top"><span class="tag-icon">⌁</span><span><b>SISTEMAS INTEGRADOS</b><small>Conectividade industrial</small></span></div>
-        <div class="floating-tag tag-bottom"><span class="tag-pulse"></span><span><b>INTELIGÊNCIA EM PROCESSOS</b><small>Da operação à informação</small></span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-pulse"></span><span><b>INTELIGÊNCIA EM PROCESSOS</b><small>Da operation à informação</small></span></div>
         
-        <!-- Coordenadas Geométricas de Detalhe -->
         <div class="coordinate coord-one">23° / 45° / AE</div>
         <div class="coordinate coord-two">INDUSTRIAL SYSTEMS</div>
       </div>
       
-      <!-- Linhas decorativas no rodapé do banner principal -->
       <div class="hero-bottom-rule"><span></span><span></span><span></span><span></span><span></span></div>
     </section>
 
     <!-- ==========================================================================
          BLOCO 5: FAIXA DE MARCA (Intro Strip)
-         Função: Divisória horizontal simples de transição visual.
          ========================================================================== -->
     <section class="intro-strip">
       <p>ENGENHARIA & TECNOLOGIA</p>
@@ -112,7 +98,6 @@
 
     <!-- ==========================================================================
          BLOCO 6: GRADE DE SOLUÇÕES COMERCIAIS (Solutions Section)
-         Função: Lista os 6 principais pilares de atuação técnica e serviços.
          ========================================================================== -->
     <section class="section solutions" id="solucoes">
       <div class="section-heading">
@@ -120,7 +105,6 @@
         <p>Unimos conhecimento técnico e tecnologia para apoiar a operação, a modernização e a evolução de sistemas industriais.</p>
       </div>
       
-      <!-- Grade de serviços distribuídos -->
       <div class="service-grid">
         <!-- Serviço 1 -->
         <article class="service-card">
@@ -146,290 +130,63 @@
           <a href="#contato" aria-label="Consultar elétrica e redes">Consultar solução <span>↗</span></a>
         </article>
         
-        <!-- Serviço 4 -->
+        <!-- Serviço 4 (Reconstruído a partir do corte anterior) -->
         <article class="service-card">
-          <div class="card-top"><span class="service-number">04</span><span class="service-icon">⟐</span></div>
-          <h3>Software & monitoramento</h3>
-          <p>Sistemas de coleta, visualização e integração de informações para apoiar decisões operacionais.</p>
-          <a href="#contato" aria-label="Consultar software e monitoramento">Consultar solução <span>↗</span></a>
-        </article>
-        
-        <!-- Serviço 5 -->
-        <article class="service-card">
-          <div class="card-top"><span class="service-number">05</span><span class="service-icon">⚙</span></div>
-          <h3>Manutenção industrial</h3>
-          <p>Apoio técnico para diagnóstico, melhoria e confiabilidade de sistemas e equipamentos industriais.</p>
-          <a href="#contato" aria-label="Consultar manutenção industrial">Consultar solução <span>↗</span></a>
-        </article>
-        
-        <!-- Serviço 6: Card de Destaque Especial -->
-        <article class="service-card service-card-featured">
-          <div class="card-top"><span class="service-number">06</span><span class="service-icon">↗</span></div>
-          <h3>Soluções sob medida</h3>
-          <p>Projetos personalizados de engenharia e tecnologia, desenvolvidos conforme a necessidade de cada operação.</p>
-          <a href="#contato" aria-label="Solicitar solução sob medida">Vamos conversar <span>↗</span></a>
-        </article>
-      </div>
-      
-      <p class="disclaimer">Os serviços apresentados são uma estrutura inicial do site e devem ser ajustados para refletir exatamente o escopo comercial da ALFA-ER.</p>
-    </section>
-    <!-- ==========================================================================
-         BLOCO 6.5: PORTFÓLIO DE PROJETOS INTEGRADOS (Projects Section)
-         Função: Ilustra os sistemas reais já entregues e integrados pela ALFA-ER.
-         ========================================================================== -->
-    <section class="section projects" id="projetos">
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow">CASES DE SUCESSO <span class="eyebrow-line"></span></div>
-          <h2>Sistemas em<br><span>operação real.</span></h2>
-        </div>
-        <p>Conheça algumas das nossas principais integrações de engenharia aplicadas diretamente no chão de fábrica.</p>
-      </div>
-
-      <!-- Grade dos Projetos -->
-      <div class="projects-grid">
-        
-        <!-- Projeto 1: SCADA -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="https://dreamstime.com" alt="Central de Monitoramento SCADA">
-            <span class="project-tag">SCADA & IHMs</span>
-          </div>
-          <div class="project-content">
-            <h3>Centralização de Monitoramento de Processos</h3>
-            <p>Desenvolvimento de sistema supervisório completo para controle em tempo real, gerenciamento de alarmes críticos e relatórios de performance para linhas produtivas complexas.</p>
-          </div>
-        </article>
-
-        <!-- Projeto 2: Painel PLC -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="https://electrical-engineering-portal.com" alt="Painel Elétrico de Controle PLC">
-            <span class="project-tag">Automação / Elétrica</span>
-          </div>
-          <div class="project-content">
-            <h3>Modernização de Painel de Controle e PLC</h3>
-            <p>Substituição de sistemas legados por lógicas de programação robustas em CLPs modernos, acompanhado do redesenho técnico do painel de distribuição e redes industriais.</p>
-          </div>
-        </article>
-
-      </div>
-    </section>    
-        <!-- ==========================================================================
-         BLOCO 7: INSTITUCIONAL / QUEM SOMOS (Company Section)
-         Função: Bloco de conteúdo sobre a história, visão e valores da empresa.
-         ========================================================================== -->
-    <section class="company section" id="empresa">
-      <!-- Elemento visual técnico simulando um Blueprint/Desenho Técnico -->
-      <div class="company-visual">
-        <div class="blue-panel"></div>
-        <div class="blueprint">
-          <div class="blueprint-cross cross-a"></div><div class="blueprint-cross cross-b"></div>
-          <div class="blueprint-label">AE / SYSTEMS</div>
-          <div class="blueprint-emblem">A<span>E</span></div>
-          <div class="blueprint-base"></div>
-          <div class="blueprint-coords">DESIGN · CONTROL · INTEGRATION</div>
-        </div>
-        <div class="visual-index">FIG. 01 <span>—</span> ALFA-ER</div>
-      </div>
-      
-      <!-- Cópia de texto institucional -->
-      <div class="company-copy">
-        <div class="eyebrow">SOBRE A ALFA-ER <span class="eyebrow-line"></span></div>
-        <h2>Engenharia com visão.<br><span>Tecnologia com propósito.</span></h2>
-        <p>Na ALFA-ER, cada desafio é uma oportunidade de conectar conhecimento técnico, inovação e resultado. Trabalhamos para desenvolver soluções que façam sentido no ambiente real da indústria.</p>
-        <p>Da automação à integração de sistemas, nosso foco é compreender a necessidade, pensar com precisão e construir caminhos mais eficientes.</p>
-        <a class="text-link" href="#contato">Conte-nos seu desafio <span>↗</span></a>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         BLOCO 8: VALORES E DIFERENCIAIS (Values Section)
-         Função: Destaca os pilares que diferenciam a ALFA-ER no mercado.
-         ========================================================================== -->
-    <section class="values section" id="diferenciais">
-      <div class="section-heading compact">
-        <div>
-          <div class="eyebrow">NOSSO COMPROMISSO <span class="eyebrow-line"></span></div>
-          <h2>Feito para funcionar.<br><span>Projetado para evoluir.</span></h2>
-        </div>
-      </div>
-      
-      <!-- Grade contendo os blocos de diferenciais -->
-      <div class="value-grid">
-        <!-- Diferencial 01 -->
-        <article class="value-item">
-          <span class="value-index">01 /</span>
-          <h3>Precisão técnica</h3>
-          <p>Decisões fundamentadas e atenção rigorosa aos detalhes e normas de cada aplicação.</p>
-        </article>
-        
-        <!-- Diferencial 02 -->
-        <article class="value-item">
-          <span class="value-index">02 /</span>
-          <h3>Inovação prática</h3>
-          <p>Uso inteligente de ferramentas e metodologias modernas aplicadas à realidade operacional.</p>
-        </article>
-
-        <!-- Diferencial 03 -->
-        <article class="value-item">
-          <span class="value-index">03 /</span>
-          <h3>Foco em confiabilidade</h3>
-          <p>Sistemas robustos construídos para garantir a continuidade e a segurança dos processos.</p>
+          <div class="card-top"><span class="service-number">04</span><span class="service-icon">⚙</span></div>
+          <h3>Desenvolvimento de Software</h3>
+          <p>Sistemas customizados e engenharia integrada focada em eficiência operacional.</p>
+          <a href="#contato" aria-label="Consultar software">Consultar solução <span>↗</span></a>
         </article>
       </div>
     </section>
 
     <!-- ==========================================================================
-         BLOCO 9: CANAL DE ATENDIMENTO E ORÇAMENTOS (Contact Section)
-         Função: Formulário de captação de leads e exibição de dados de contato.
-         ========================================================================== -->
-    <section class="contact section" id="contato">
+         SEÇÃO DE CONTATO / PROJETOS (Simulando o rodapé da primeira imagem)
+         ========================================================================= -->
+    <section class="section contact" id="contato">
       <div class="contact-container">
-        <!-- Textos e dados diretos de contato (Lado Esquerdo) -->
         <div class="contact-info">
-          <div class="eyebrow">CONEXÃO DIRETA <span class="eyebrow-line"></span></div>
-          <h2>Vamos iniciar<br><span>um projeto?</span></h2>
+          <div class="eyebrow">CONEXÃO DIRETA</div>
+          <h2>Vamos iniciar<br>um projeto?</h2>
           <p>Entre em contato para discutir as demandas de engenharia, automação ou melhoria de processos da sua empresa.</p>
-          
-          <ul class="contact-list">
+          <ul>
             <li><strong>Email:</strong> contato@alfaer.com.br</li>
             <li><strong>Atendimento:</strong> Segunda a Sexta — 8h às 18h</li>
           </ul>
         </div>
 
-        <!-- Formulário interativo de contato (Lado Direito) -->
-        <form class="contact-form" action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-mail corporativo</label>
-            <input type="email" id="email" name="email" placeholder="Ex: joao@empresa.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Como podemos ajudar?</label>
-            <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente a sua necessidade técnica ou projeto..." required></textarea>
-          </div>
-
-          <button type="submit" class="button button-primary">Enviar mensagem <span>↗</span></button>
-        </form>
+        <div class="contact-form-block">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nome completo Ex: João Silva</label>
+              <input type="text" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail corporativo Ex: joao@empresa.com</label>
+              <input type="email" id="email" placeholder="joao@empresa.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Descreva brevemente a sua necessidade técnica ou projeto...</label>
+              <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="button button-primary">Enviar mensagem <span>↗</span></button>
+          </form>
+        </div>
       </div>
     </section>
 
   </main>
-/* ==========================================================================
-   BLOCO 9.5: SEÇÃO DE PROJETOS INTEGRADOS (PORTFÓLIO)
-   Função: Estilização de cards com imagens horizontais e tags em Ciano.
-   ========================================================================== */
-.projects {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Divide em duas colunas de projetos */
-  gap: 32px;
-  margin-top: 40px;
-}
-
-.project-card {
-  background: linear-gradient(145deg, rgba(20,29,39,.68), rgba(10,14,20,.4));
-  border: 1px solid #283541;
-  overflow: hidden;
-  transition: border-color .3s, transform .3s;
-}
-
-.project-card:hover {
-  border-color: var(--cyan);
-  transform: translateY(-4px);
-}
-
-.project-image {
-  position: relative;
-  height: 240px;
-  overflow: hidden;
-  border-bottom: 1px solid #283541;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta a imagem sem distorcer */
-  transition: transform .4s ease;
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.05); /* Efeito suave de zoom na foto ao passar o mouse */
-}
-
-.project-tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  background: rgba(9, 16, 24, .85);
-  border: 1px solid var(--cyan);
-  color: var(--cyan);
-  padding: 6px 12px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.project-content {
-  padding: 24px;
-}
-
-.project-content h3 {
-  font: 700 24px Rajdhani, sans-serif;
-  margin: 0 0 12px;
-  color: var(--text);
-}
-
-.project-content p {
-  font-size: 13px;
-  color: #92a0ad;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* Ajuste simples de responsividade para telas de celulares */
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-  <!-- ==========================================================================
-       BLOCO 10: RODAPÉ INSTITUCIONAL (Footer)
-       Função: Direitos autorais, links rápidos de navegação e notas legais.
-       ========================================================================== -->
   <footer class="site-footer">
-    <div class="footer-content section">
-      <div class="footer-brand">
-        <span class="brand-text"><strong>ALFA-ER</strong><small>ENGENHARIA & TECNOLOGIA</small></span>
-        <p>© 2026 ALFA-ER Serviços e Soluções. Todos os direitos reservados.</p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="#solucoes">Soluções</a>
-        <a href="#empresa">A Empresa</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#inicio">Voltar ao topo ↑</a>
-      </div>
+    <div class="footer-brand">
+      <strong>ALFA-ER</strong>
+      <small>ENGENHARIA & TECNOLOGIA</small>
     </div>
   </footer>
 
   <!-- ==========================================================================
-       BLOCO 11: ARQUIVOS DE COMPORTAMENTO (Scripts)
-       Função: Carrega o arquivo JavaScript responsável pelas interatividades do site.
+       CORREÇÃO DO ERRO 404: Importando o script usando o nome exato do GitHub
        ========================================================================== -->
   <script src="script.js"></script>
-
 </body>
 </html>
